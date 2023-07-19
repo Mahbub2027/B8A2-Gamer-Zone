@@ -213,13 +213,13 @@
 }
 /* Game Items start */
 .game-section {
-    margin: 20px auto;
+    margin: -80px auto 20px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .game-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 50px 120px;
+    margin: 0px 120px -17px;
     padding: 30px 0px;
 }
 
