@@ -11,6 +11,7 @@
 .nav-container {
     display: flex;
     justify-content: space-around;
+    gap: 200px;
     align-items: center;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -84,10 +85,6 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 550px 800px;
-    
-    
-    
-    
 }
 
 .banner-title-1 {
@@ -110,7 +107,6 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    
 }
 .btn-primary{
     padding: 12px 30px;
@@ -130,12 +126,6 @@
     max-height: 40%;
     margin-top: 10px;
 }
-
-
-
-
-
-
 /* online games */
 .online-games {
     margin-top: 100px;
@@ -174,11 +164,20 @@
 .games-photos img {
     max-width: 280px;
     height: 320px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .games-txt {
     max-width: 280px;
 
+}
+.games-photos img:hover{
+    border: 3px solid #FF42A5;
+    border-radius: 16px;
+    background-image: url('../images/play-button\ 1.png');
+    opacity: 0.8;
 }
 
 /* play instantly  */
@@ -212,13 +211,11 @@
     position: relative;
     bottom: 230px;
 }
-
 /* Game Items start */
 .game-section {
     margin: 20px auto;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
-
 .game-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -296,9 +293,6 @@
 }
 
 .footer-icons img {
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: center; */
     width: 42px;
     height: 40px;
     margin: 12px 20px;
@@ -314,7 +308,6 @@
     justify-content: center;
     gap: 1rem;
     margin: 2rem 0px;
-
 }
 
 .footer-terms li {
@@ -326,8 +319,6 @@
     color: rgba(255, 255, 255, 0.60);
     margin-right: 20px;
 }
-
-
 
 
 
@@ -346,7 +337,6 @@
     .banner-container{
         background-size: 385px 280px;
         margin: 5px 0px 100px;
-        
     }
 
     .banner-img img{
@@ -365,9 +355,11 @@
         text-align: center;
     }
 
-
     .section-title {
         font-size: 2rem;
+    }
+    .section-description{
+        font-size: 0.8rem;
     }
 
     .pl-image {
@@ -391,9 +383,12 @@
         font-size: 0.6rem;
     }
 
+    .games-item{
+        gap: 0.9rem;
+    }
     .games-item img {
-        width: 40px;
-        height: 40px;
+        width: 39px;
+        height: 39px;
     }
 
     .footer-items,
@@ -424,7 +419,6 @@
     .banner-container{
         background-size: 680px 290px;
         margin: 0px 0px 100px;
-        
     }
     .play-instantly {
         flex-direction: column-reverse;
@@ -440,7 +434,6 @@
         max-width: 50%;
         position: relative;
         bottom: 140px;
-        /* height: 60%; */
     }
 
     .game-container {
